@@ -1,0 +1,3 @@
+[submodule "magic-src"]
+	path = magic-src
+	url = https://github.com/RTimothyEdwards/magic
