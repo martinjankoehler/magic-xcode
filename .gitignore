@@ -1,0 +1,10 @@
+.DS_Store
+
+#
+# Throw away ALL personal settings (including custom schemes!
+#     - unless they are "shared")
+# This ought to have a trailing slash
+#
+xcuserdata/
+
+
