@@ -1,0 +1,9 @@
+script print("Loading magic/LLDBInitFile")
+
+settings set target.inline-breakpoint-strategy always
+settings set symbols.load-on-demand true
+
+settings set symbols.enable-background-lookup true
+## settings set target.process.stop-on-sharedlibrary-events true
+
+
