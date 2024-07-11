@@ -12,7 +12,7 @@
    - All `lib<module>.o` files are linked into a shared library `tclmagic.dylib` (`gcc -o tclmagic.dylib -dynamiclib ../extract/libextract.o ../commands/libcommands.o ...`)
    - The shared library links against `-ltkstub8.6` and `-ltclstub8.6` and X11 related libraries
 - There are 2 binaries `magicexec` and `magicdnull`
-   - They only link aginst `-ltk8.6` and `-ltcl8.6`, and the shared library gets loaded using `dlopen`
+   - They only link aginst `-ltk8.6` and `-ltcl8.6`, and the shared library gets loaded from the main TCL script `magic.tcl` using `load -lazy ...` (which is using `dlopen`)
  
 ### Hard coded strings via compile flags
 
