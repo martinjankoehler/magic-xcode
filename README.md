@@ -19,3 +19,9 @@
 - `magicexec` will search for a TCL script `magic.tcl`, whose location `TCL_DIR` is hard coded via compile flags `-DTCL_DIR=\"/usr/local/lib/magic/tcl\"`
 - amongst other (less important) examples are of such hard coded compiler flag strings are `CAD_DIR`, and for the version information (`MAGIC_REVISION`, `MAGIC_VERSION`, `MAGIC_COMMIT`)
 
+## Dependencies
+
+- XQuartz installed via HomeBrew: `brew install xquartz`
+- It is expected that TCL/TK 8.6 has been compiled to `/usr/local/opt/tcl`
+  - Tcl: https://prdownloads.sourceforge.net/tcl/tcl8.6.10-src.tar.gz
+  - Tk: https://prdownloads.sourceforge.net/tcl/tk8.6.10-src.tar.gz
