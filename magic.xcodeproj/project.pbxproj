@@ -1022,7 +1022,7 @@
 		5B1DEB372C35815B009C0933 /* ext2spice.sh.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ext2spice.sh.in; sourceTree = "<group>"; };
 		5B1DEB382C35815B009C0933 /* libmgr.tcl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libmgr.tcl; sourceTree = "<group>"; };
 		5B1DEB392C35815B009C0933 /* magic.sh.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic.sh.in; sourceTree = "<group>"; };
-		5B1DEB3A2C35815B009C0933 /* magic.tcl.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic.tcl.in; sourceTree = "<group>"; };
+		5B1DEB3A2C35815B009C0933 /* magic.tcl.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = magic.tcl.in; path = "magic-src/tcltk/magic.tcl.in"; sourceTree = SOURCE_ROOT; };
 		5B1DEB3B2C35815B009C0933 /* magicdnull.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = magicdnull.c; sourceTree = "<group>"; };
 		5B1DEB3C2C35815B009C0933 /* magicexec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = magicexec.c; sourceTree = "<group>"; };
 		5B1DEB3D2C35815B009C0933 /* magicps.pro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magicps.pro; sourceTree = "<group>"; };
@@ -2222,6 +2222,7 @@
 				5B1DE84A2C357F5C009C0933 /* Headers */,
 				5B1DE84B2C357F5C009C0933 /* Sources */,
 				5B1DE84C2C357F5C009C0933 /* Frameworks */,
+				5B1497782C403482003BAECF /* Generate Script magic.tcl (passed as compile flag -DTCL_DIR=) */,
 			);
 			buildRules = (
 			);
@@ -2324,6 +2325,26 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5B1497782C403482003BAECF /* Generate Script magic.tcl (passed as compile flag -DTCL_DIR=) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/magic-src/tcltk/magic.tcl.in",
+			);
+			name = "Generate Script magic.tcl (passed as compile flag -DTCL_DIR=)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/magic.tcl",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\ncp ${SCRIPT_INPUT_FILE_0} ${SCRIPT_OUTPUT_FILE_0}   \n";
+		};
 		5B1DED992C358BD6009C0933 /* Run scripts/makedbh Python Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
