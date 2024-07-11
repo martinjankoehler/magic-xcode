@@ -2885,8 +2885,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -2902,8 +2903,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -2928,7 +2930,7 @@
 					/opt/X11/lib,
 				);
 				OTHER_CFLAGS = (
-					"-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"",
+					"-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"",
 					"-DCAD_DIR=\\\"/usr/local/lib\\\"",
 					"-DBIN_DIR=\\\"/usr/local/bin\\\"",
 					"-DUSE_TK_STUBS",
@@ -3017,7 +3019,7 @@
 					/opt/X11/lib,
 				);
 				OTHER_CFLAGS = (
-					"-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"",
+					"-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"",
 					"-DCAD_DIR=\\\"/usr/local/lib\\\"",
 					"-DBIN_DIR=\\\"/usr/local/bin\\\"",
 					"-DUSE_TK_STUBS",
@@ -3096,8 +3098,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -3113,8 +3116,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -3130,8 +3134,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -3147,8 +3152,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -3164,8 +3170,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -3181,8 +3188,9 @@
 					"$(inherited)",
 					"/usr/local/opt/tcl-tk/lib",
 				);
-				OTHER_CFLAGS = "-DTCL_DIR=\\\"/usr/local/lib/magic/tcl\\\"";
+				OTHER_CFLAGS = "-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
