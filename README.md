@@ -1,5 +1,8 @@
 # Xcode Project for debugging MAGIC
 
+[MAGIC](http://opencircuitdesign.com/magic/) is a VLSI EDA tool suite, available on Github at https://github.com/RTimothyEdwards/magic/
+In order to figure out its `configure`/`Make` based build process, I recreated the build process in Xcode.
+
 ## Learnings
 
 ### MAGIC build process overview
