@@ -43,8 +43,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       viewDebuggingEnabled = "No"
-      consoleMode = "1"
-      structuredConsoleMode = "3">
+      consoleMode = "0"
+      structuredConsoleMode = "1">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -73,11 +73,11 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "$PDKPATH/libs.tech/magic/$PDK.magicrc"
+            argument = "$HOME/.volare/sky130A/libs.tech/magic/sky130A.magicrc"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "pex_nmos_diode2.tcl"
+            argument = "pex_sidewall_100um_x_100um_distance_200nm_li1.tcl"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -99,7 +99,7 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "DISPLAY"
-            value = "/private/tmp/com.apple.launchd.BDx3Ygnova/org.xquartz:0"
+            value = "/private/tmp/com.apple.launchd.S55MTwLCva/org.xquartz:0"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

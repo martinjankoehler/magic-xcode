@@ -466,6 +466,27 @@
 			remoteGlobalIDString = 5B1DE84D2C357F5C009C0933;
 			remoteInfo = tclmagic;
 		};
+		5B9846722CBD83E7009EE6C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B1DE8382C357EF9009C0933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1DE84D2C357F5C009C0933;
+			remoteInfo = tclmagic;
+		};
+		5B9846742CBD83F4009EE6C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B1DE8382C357EF9009C0933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1DE84D2C357F5C009C0933;
+			remoteInfo = tclmagic;
+		};
+		5BDC20092CE68A850092C2A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B1DE8382C357EF9009C0933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1DE84D2C357F5C009C0933;
+			remoteInfo = tclmagic;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -2208,6 +2229,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B9846732CBD83E7009EE6C6 /* PBXTargetDependency */,
 			);
 			name = magicexec_broken_rpath;
 			productName = magic;
@@ -2244,6 +2266,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5B9846752CBD83F4009EE6C6 /* PBXTargetDependency */,
 			);
 			name = magicdnull_broken_rpath;
 			productName = magic;
@@ -2278,6 +2301,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5BDC200A2CE68A850092C2A7 /* PBXTargetDependency */,
 				5B1DEDDB2C401445009C0933 /* PBXTargetDependency */,
 			);
 			name = magicdnull;
@@ -2776,6 +2800,21 @@
 			target = 5B1DE84D2C357F5C009C0933 /* tclmagic */;
 			targetProxy = 5B1DEE062C40291F009C0933 /* PBXContainerItemProxy */;
 		};
+		5B9846732CBD83E7009EE6C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1DE84D2C357F5C009C0933 /* tclmagic */;
+			targetProxy = 5B9846722CBD83E7009EE6C6 /* PBXContainerItemProxy */;
+		};
+		5B9846752CBD83F4009EE6C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1DE84D2C357F5C009C0933 /* tclmagic */;
+			targetProxy = 5B9846742CBD83F4009EE6C6 /* PBXContainerItemProxy */;
+		};
+		5BDC200A2CE68A850092C2A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1DE84D2C357F5C009C0933 /* tclmagic */;
+			targetProxy = 5BDC20092CE68A850092C2A7 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -2814,6 +2853,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_LOCATION = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2837,6 +2877,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SYMROOT = "${SRCROOT}/build";
 			};
 			name = Debug;
 		};
@@ -2875,6 +2916,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2891,6 +2933,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SYMROOT = "${SRCROOT}/build";
 			};
 			name = Release;
 		};
@@ -2951,6 +2994,7 @@
 					/opt/X11/lib,
 				);
 				OTHER_CFLAGS = (
+					"-DCAP_DEBUG=1",
 					"-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"",
 					"-DCAD_DIR=\\\"/usr/local/lib\\\"",
 					"-DBIN_DIR=\\\"/usr/local/bin\\\"",
