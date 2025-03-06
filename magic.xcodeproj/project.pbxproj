@@ -2995,6 +2995,7 @@
 				);
 				OTHER_CFLAGS = (
 					"-DCAP_DEBUG=1",
+                                        "-DPEX_RES_DEBUG=1",
 					"-DTCL_DIR=\\\"$(BUILT_PRODUCTS_DIR)\\\"",
 					"-DCAD_DIR=\\\"/usr/local/lib\\\"",
 					"-DBIN_DIR=\\\"/usr/local/bin\\\"",
